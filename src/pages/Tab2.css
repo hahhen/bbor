@@ -1,0 +1,29 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_content{
+    display: flex;
+    justify-content: center;
+    max-width: 1320px;
+}
+
+.bheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bfacilityimg{
+    object-fit: cover;
+    min-width: 100%;
+    width: 1320px;
+    height: 500px;
+}
+
+.bheadertitle{
+    font-weight: bold;
+}

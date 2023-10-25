@@ -1,0 +1,8 @@
+.main_content{
+    display: flex;
+    justify-content: center;
+}
+
+.recent_projects_header{
+    font-weight: bold;
+}

@@ -12,8 +12,10 @@ const Tab1: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <main>
-          <div>
-            <h2>RECENT PROJECTS</h2>
+          <div className="main_content">
+            <div className="recent_projects">
+              <h2 className="recent_projects_header">RECENT PROJECTS</h2>
+            </div>
           </div>
         </main>
       </IonContent>
