@@ -13,8 +13,25 @@ const Tab1: React.FC = () => {
       <IonContent fullscreen>
         <main>
           <div className="main_content">
-            <div className="recent_projects">
-              <h2 className="recent_projects_header">RECENT PROJECTS</h2>
+            <div className="bheader">
+              <h2 className="bheadertitle">THERE'S NO PLACE LIKE HOME</h2>
+              <img className="bfacilityimg" src="https://images.divisare.com//images/c_limit,f_auto,h_2000,q_auto,w_3000/v1526582808/ohq1du4nhlgclyca7zbo/august-fischer-teshima-art-museum.jpg" />
+            </div>
+            <div className='hr'></div>
+            <h2 className="bheadertitle">RECENT PROJECTS</h2>
+            <div className='projects'>
+              <div className="proj">
+                <img className="projImg" src="yarthi.png" />
+              </div>
+              <div className="proj">
+                <img className="projImg" src="1_2.png" />
+              </div>
+              <div className="proj">
+                <img className="projImg" src="1_1.png" />
+              </div>
+              <div className="proj">
+                <img className="projImg" src="2_1.png" />
+              </div>
             </div>
           </div>
         </main>

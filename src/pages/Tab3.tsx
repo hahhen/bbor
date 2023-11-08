@@ -11,12 +11,22 @@ const Tab3: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Bureau 2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+        <main>
+          
+          <div className="main_content">
+            <div className="bheader">
+              <h2 className="bheadertitle">CREATING MANY IMPORTANT RESEARCHES</h2>
+              <img className="bfacilityimg" src="b2facility.jpg" />
+            </div>
+            <div className='hr'></div>
+            <h2 className="bheadertitle">RECENT PROJECTS</h2>
+            <div className='projects'>
+              <div className="proj">
+                <img className="projImg" src="2_1.png" />
+              </div>
+            </div>
+          </div>
+        </main>
       </IonContent>
     </IonPage>
   );

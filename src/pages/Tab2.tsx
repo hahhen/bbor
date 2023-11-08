@@ -17,6 +17,19 @@ const Tab2: React.FC = () => {
               <h2 className="bheadertitle">CREATING VERY IMPORTANT RESEARCH</h2>
               <img className="bfacilityimg" src="b1facility.jpg" />
             </div>
+            <div className='hr'></div>
+            <h2 className="bheadertitle">RECENT PROJECTS</h2>
+            <div className='projects'>
+              <div className="proj">
+                <img className="projImg" src="yarthi.png" />
+              </div>
+              <div className="proj">
+                <img className="projImg" src="1_2.png" />
+              </div>
+              <div className="proj">
+                <img className="projImg" src="1_1.png" />
+              </div>
+            </div>
           </div>
         </main>
       </IonContent>

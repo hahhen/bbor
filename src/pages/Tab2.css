@@ -6,7 +6,8 @@ main{
 
 .main_content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     max-width: 1320px;
 }
 
@@ -15,6 +16,7 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .bfacilityimg{
@@ -22,8 +24,26 @@ main{
     min-width: 100%;
     width: 1320px;
     height: 500px;
+    object-position: bottom;
+
+}
+
+.proj{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.projImg{
+    width: 80%;
 }
 
 .bheadertitle{
     font-weight: bold;
 }
+
+.hr {
+    border-bottom: 1px solid #ccc;
+    margin: 1rem;
+    width: 100%;
+  }
