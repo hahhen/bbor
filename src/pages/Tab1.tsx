@@ -5,9 +5,9 @@ import './Tab1.css';
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
+      <IonHeader className='ion-no-border'>
         <IonToolbar>
-          <IonTitle><img src="bborL.png" width="200"></img></IonTitle>
+          <IonTitle><img className='logo' src="bborL.png" width="200"></img></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -15,7 +15,7 @@ const Tab1: React.FC = () => {
           <div className="main_content">
             <div className="bheader">
               <h2 className="bheadertitle">THERE'S NO PLACE LIKE HOME</h2>
-              <img className="bfacilityimg" src="https://images.divisare.com//images/c_limit,f_auto,h_2000,q_auto,w_3000/v1526582808/ohq1du4nhlgclyca7zbo/august-fischer-teshima-art-museum.jpg" />
+              <img className="landIm" src="https://images.divisare.com//images/c_limit,f_auto,h_2000,q_auto,w_3000/v1526582808/ohq1du4nhlgclyca7zbo/august-fischer-teshima-art-museum.jpg" />
             </div>
             <div className='hr'></div>
             <h2 className="bheadertitle">RECENT PROJECTS</h2>

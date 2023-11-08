@@ -5,9 +5,9 @@ import './Tab2.css';
 const Tab2: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle><img src="bbor1L.png" width="200"></img></IonTitle>
+      <IonHeader className='ion-no-border'>
+        <IonToolbar >
+          <IonTitle><img className='logo' src="bbor1L.png" width="200"></img></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

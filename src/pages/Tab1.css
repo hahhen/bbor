@@ -1,3 +1,15 @@
 .recent_projects_header{
     font-weight: bold;
 }
+
+.logo{
+    margin: 10px 0 10px 0;
+}
+
+.landIm{
+    object-fit: cover;
+    min-width: 100%;
+    width: 1320px;
+    height: 500px;
+    object-position: bottom;
+}
