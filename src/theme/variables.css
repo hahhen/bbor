@@ -81,6 +81,10 @@ http://ionicframework.com/docs/theming/ */
    * Dark Colors
    * -------------------------------------------
    */
+  .logo{
+    -webkit-filter: invert(1);
+   filter: invert(1);
+  }
 
   body {
     --ion-color-primary: #6a64ff;
