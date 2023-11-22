@@ -81,10 +81,14 @@ http://ionicframework.com/docs/theming/ */
    * Dark Colors
    * -------------------------------------------
    */
-  .logo, .icon-inner svg g{
+  .logo{
     -webkit-filter: invert(1);
    filter: invert(1);
-   fill: #fff;
+  }
+
+  .tablogo{
+    -webkit-filter: invert(1);
+   filter: invert(1);
   }
 
   body {
