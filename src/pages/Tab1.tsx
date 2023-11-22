@@ -7,7 +7,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader className='ion-no-border'>
         <IonToolbar>
-          <IonTitle><img className='logo' src="bborL.png" width="200"></img></IonTitle>
+          <IonTitle><img className='logo' src="bborL.webp" width="200"></img></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -21,16 +21,16 @@ const Tab1: React.FC = () => {
             <h2 className="bheadertitle">RECENT PROJECTS</h2>
             <div className='projects'>
               <div className="proj">
-                <img className="projImg" src="yarthi.png" />
+                <img className="projImg" src="yarthi.webp" />
               </div>
               <div className="proj">
-                <img className="projImg" src="1_2.png" />
+                <img className="projImg" src="1_2.webp" />
               </div>
               <div className="proj">
-                <img className="projImg" src="1_1.png" />
+                <img className="projImg" src="1_1.webp" />
               </div>
               <div className="proj">
-                <img className="projImg" src="2_1.png" />
+                <img className="projImg" src="2_1.webp" />
               </div>
             </div>
           </div>
