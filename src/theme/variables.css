@@ -86,6 +86,11 @@ http://ionicframework.com/docs/theming/ */
    filter: invert(1);
   }
 
+  .tablogo{
+    -webkit-filter: invert(1);
+   filter: invert(1);
+  }
+
   body {
     --ion-color-primary: #6a64ff;
     --ion-color-primary-rgb: 106, 100, 255;

@@ -31,7 +31,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader className='ion-no-border'>
         <IonToolbar>
-          <IonTitle><img className='logo' src="bborL.png" width="200"></img></IonTitle>
+          <IonTitle><img className='logo' src="bborL.webp" width="200"></img></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

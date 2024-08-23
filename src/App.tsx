@@ -60,11 +60,11 @@ const App: React.FC = () => (
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={"bbor1L.svg"} />
+            <IonIcon aria-hidden="true" className='tablogo' icon={"bbor1L.svg"} />
             <IonLabel>Bureau 1</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={"bbor2L.svg"} />
+            <IonIcon aria-hidden="true" className='tablogo' icon={"bbor2L.svg"} />
             <IonLabel>Bureau 2</IonLabel>
           </IonTabButton>
         </IonTabBar>
