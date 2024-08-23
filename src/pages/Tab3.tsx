@@ -1,8 +1,32 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
+import { supabase } from '../supabaseClient';
+import React, { useEffect, useState } from 'react';
 
 const Tab3: React.FC = () => {
+  const [works, setWorks] = useState<any[]>([]);
+
+  useEffect(() => {
+    getWorks();
+  }, []);
+
+  const getWorks = async () => {
+    try {
+      const { data, error } = await supabase.from('paper').select().match({bureau_id: 2});
+
+      if (error) {
+        console.error('Error fetching works:', error.message);
+        return;
+      }
+
+      if (data) {
+        setWorks(data);
+      }
+    } catch (error: any) {
+      console.error('Error fetching works:', error.message);
+    }
+  };
   return (
     <IonPage>
       <IonHeader className='ion-no-border'>

@@ -1,8 +1,32 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import React, { useEffect, useState } from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
+import { supabase } from '../supabaseClient';
 
 const Tab1: React.FC = () => {
+  const [works, setWorks] = useState<any[]>([]);
+
+  useEffect(() => {
+    getWorks();
+  }, []);
+
+  const getWorks = async () => {
+    try {
+      const { data, error } = await supabase.from('paper').select();
+
+      if (error) {
+        console.error('Error fetching works:', error.message);
+        return;
+      }
+
+      if (data) {
+        setWorks(data);
+      }
+    } catch (error: any) {
+      console.error('Error fetching works:', error.message);
+    }
+  };
   return (
     <IonPage>
       <IonHeader className='ion-no-border'>
@@ -20,18 +44,13 @@ const Tab1: React.FC = () => {
             <div className='hr'></div>
             <h2 className="bheadertitle">RECENT PROJECTS</h2>
             <div className='projects'>
-              <div className="proj">
-                <img className="projImg" src="yarthi.png" />
-              </div>
-              <div className="proj">
-                <img className="projImg" src="1_2.png" />
-              </div>
-              <div className="proj">
-                <img className="projImg" src="1_1.png" />
-              </div>
-              <div className="proj">
-                <img className="projImg" src="2_1.png" />
-              </div>
+              {
+                works.map((work: any) => (
+                  <div className="proj">
+                    <img className="projImg" src={work.image} />
+                  </div>
+                ))
+              }
             </div>
           </div>
         </main>
